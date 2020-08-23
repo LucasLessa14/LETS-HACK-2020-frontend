@@ -7,9 +7,17 @@ var axiosConfig = {
     }
 }
 
-routes.get('/', (req, res) => res.render('page'));
-routes.get('/login', (req, res) => res.render('login'));
-routes.get('/register', (req, res) => res.render('register'));
+routes.get('/', (req, res) => res.render('home'));
+routes.get('/about', (req, res) => res.render('about'));
+routes.get('/suport', (req, res) => res.render('suport'));
+routes.get('/concact', (req, res) => res.render('concact'));
+routes.get('/services', (req, res) => res.render('services'));
+routes.get('/analise', (req, res) => res.render('analise'));
+routes.get('/connections', (req, res) => res.render('connections'));
+
+
+routes.get('/login', (req, res) => res.render('authenticate/login'));
+routes.get('/register', (req, res) => res.render('authenticate/register'));
 
 routes.post('/login', async (req,res) => {
     const { email, password } = req.body;

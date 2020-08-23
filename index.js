@@ -2,14 +2,12 @@ const port = 8080;
 
 const routes = require('./routes/routes');
 
-const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
