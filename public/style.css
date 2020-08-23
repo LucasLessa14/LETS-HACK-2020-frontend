@@ -10,7 +10,7 @@
 
 .logo {
     position: absolute;
-    top: 0px;
+    top: 30px;
     left: 10%;
 }
 
@@ -163,6 +163,25 @@ h2 {
     margin-top: 20px;
     font-size: 16px;
     color: #042331;
+}
+
+#content h3 {
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    color: #042331;
+}
+
+#content h4 {
+    margin: 20px 0;
+    font-size: 40px;
+    text-align: center;
+    color: #042331;
+}
+
+#content input, #content label, #content a {
+    margin: 10px 10%;
+    width: 80%;
 }
 
 /* SIDEBAR */
